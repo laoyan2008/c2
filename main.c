@@ -36,9 +36,14 @@ int main()
         if (code == 2)
         {
             printf("删除最后一个敏感字符\n");
+            if(index==0)
+            {
+            printf("当前无可删除字符\n");
+            }
+            else{
             index--;
-
             printf("删除成功，回车继续\n");
+            }
             char x;
             scanf("%c",&x);
             scanf("%c",&x);
