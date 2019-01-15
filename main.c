@@ -11,7 +11,7 @@ int main()
         printf("2---删除最后一个敏感字符\n");
         printf("3---查看敏感字符\n");
         printf("4---\n");
-        printf("5---\n");
+        printf("5---退出系统\n");
 
         printf("请输入要使用的功能\n");
 
@@ -51,7 +51,7 @@ int main()
             {
                 printf("第%d个敏感字符为%c\n",i+1,arr[i]);
             }
-            printf("删除成功，点击回车继续\n");
+            printf("点击回车继续\n");
             char x;
             scanf("%c",&x);
             scanf("%c",&x);
