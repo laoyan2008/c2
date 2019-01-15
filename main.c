@@ -3,17 +3,17 @@ char arr[1024];
 int index = 0;
 int main()
 {
-    printf("进入敏感字符管理系统");
+    printf("进入敏感字符管理系统\n");
 
     while (1)
     {
         printf("1---添加敏感字符\n");
         printf("2---删除最后一个敏感字符\n");
-        printf("3---\n");
+        printf("3---查看敏感字符\n");
         printf("4---\n");
         printf("5---\n");
 
-        printf("");
+        printf("请输入要使用的功能\n");
 
         int code;
         scanf("%d", &code);
@@ -45,7 +45,16 @@ int main()
         }
         if (code == 3)
         {
-            
+            printf("所有敏感字符如下\n");
+
+            for(int i=0;i < index; i++)
+            {
+                printf("第%d个敏感字符为%c\n",i+1,arr[i]);
+            }
+            printf("删除成功，点击回车继续\n");
+            char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
         }
         if (code == 4)
         {
